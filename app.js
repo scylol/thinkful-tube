@@ -7,7 +7,8 @@ function getDataFromApi(searchTerm, callback) {
     part: 'snippet',
     key: 'AIzaSyDD8n-uCr_ls7qk7aSqEFeSH7scMdZrr1k',
     q: searchTerm,
-    maxResults: 20
+    maxResults: 20,
+    type:'video'
 
   }
   $.getJSON(YOUTUBE_BASE_URL, query, callback);
@@ -21,11 +22,11 @@ function displayYouTubeSearchData(data) {
   if (data.items) {
     data.items.forEach(function(item) {
     resultElement +="<li><a target='_blank' href='https://www.youtube.com/watch?v=" + item.id.videoId + "'><img class ='thumbnail-image'src='" 
-     +  item.snippet.thumbnails.high.url + "' /></a><a target='_blank' href='https://www.youtube.com/watch?v=" + item.id.videoId + "'><p class='title'>"
+     +  item.snippet.thumbnails.medium.url + "' /></a><a target='_blank' href='https://www.youtube.com/watch?v=" + item.id.videoId + "'><p class='title'>"
      + item.snippet.title + "</p></a></li>";
     });
   }
-  $('.js-search-results').html(resultElement);
+  $('.js-search-results ul').html(resultElement);
 }
 
 function watchSubmit() {

@@ -8,8 +8,21 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	padding-bottom: 20px;
+	background-color: #f1f1f1;
 }
 
+h1 {
+	color: #666;
+}
+
+button {
+    padding: 5px;
+}
+
+.js-query {
+    padding: 5px;
+    min-width: 500px;
+}
 
 
 .js-search-form {
@@ -18,18 +31,23 @@ body {
 
 .thumbnail-image {
 	width:100%;
-	height: 200px;
+	height: 100%;
 	padding-right: 3px;
 	padding-left:3px;
 }
 
+.js-search-results {
+	background-color: white;
+}
 
 .js-search-results li {
 	display:inline-table;
 	list-style: none;
 	width:25%;
-	height: 100%;
 	margin-bottom: 10px;
+	border-bottom: 1px solid #CCC;
+    padding: 10px;
+
 }
 
 .title {
@@ -37,10 +55,14 @@ body {
 	color: #167ac6;
 	height:50px;
 	margin-top: 0px;
+	text-align: left;
 }
 
 a {
 	text-decoration: none;
 }
 
-
+ul {
+    padding: 0px;
+    margin: 0 auto;
+}
