@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+
+
+.js-search-form {
+	margin-bottom: 20px;
+}
+
+.thumbnail-image {
+	width:100%;
+	height: 200px;
+	padding-right: 3px;
+	padding-left:3px;
+}
+
+
+.js-search-results li {
+	display:inline-table;
+	list-style: none;
+	width:25%;
+	height: 100%;
+	margin-bottom: 10px;
+}
+
+.title {
+	font-weight: bold;
+	color: #167ac6;
+	height:50px;
+	margin-top: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
